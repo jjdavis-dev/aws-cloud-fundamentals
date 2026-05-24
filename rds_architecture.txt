@@ -1,0 +1,50 @@
+RDS Architecture
+
+1. Define Amazon RDS and list at least four traditional database administration tasks it 
+automates.
+
+Amazon RDS stands for Relational Database Service. It is a managed database service from 
+AWS that makes it easier to set up, run, and maintain relational databases in the cloud.
+
+RDS automates or reduces tasks such as:
+- Hardware provisioning
+- Database backups
+- Software patching
+- Failure recovery
+- Database maintenance
+- Storage management
+
+2. Six relational database engines supported by Amazon RDS
+
+The six database engines supported by Amazon RDS are:
+- Amazon Aurora
+- PostgreSQL
+- MySQL
+- MariaDB
+- Oracle
+- Microsoft SQL Server
+
+3. Multi-AZ configuration
+
+A Multi-AZ configuration is designed to improve availability and reliability by keeping 
+a standby database in another Availability Zone. If the main database fails, AWS can 
+fail over to the standby database.
+
+The two business continuity metrics it helps minimize are downtime and data loss.
+
+4. RDS Storage Auto Scaling
+
+RDS Storage Auto Scaling automatically increases the amount of storage when the database 
+starts running out of available space. This helps the database continue growing without 
+requiring a person to manually resize the storage.
+
+5. Safety setting to control cost
+
+Administrators must configure a maximum storage threshold. This prevents storage from 
+growing endlessly and helps control costs.
+
+6. Critical Contrast
+
+RDS supports auto-scaling at the storage layer. It does not automatically scale CPU or 
+RAM like EC2 Auto Scaling can scale compute resources. Unlike EC2, RDS auto-scaling is 
+focused on database storage growth, not adding more processing power or memory.
