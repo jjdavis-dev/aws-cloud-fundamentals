@@ -1,0 +1,31 @@
+EC2 Instance Selection
+
+Naming Convention Breakdown: m5.2xlarge
+
+The letter m represents the instance family. In this case, m stands for a general 
+purpose instance.
+
+The number 5 represents the generation of the instance. This means it is the fifth 
+generation of that instance family.
+
+The term 2xlarge represents the size of the instance. This determines how much CPU, 
+memory, networking, and other resources the instance has.
+
+Workload Mapping Case Studies
+
+The Startup Web Server:
+For a small student project or medium-sized project, I would use the General Purpose 
+instance category. This category provides a balanced mix of compute, memory, and 
+networking. The specific Free Tier option commonly used for learning is t2.micro.
+
+The High-Speed BI Reporting Engine:
+For a Business Intelligence application that needs to connect to databases, perform 
+massive imports, and manipulate data locally, I would use a Memory Optimized instance. 
+High memory capacity is important because the application needs to hold and process 
+large amounts of data quickly without constantly relying on slower disk storage.
+
+The High-Concurrency Ticketing Platform:
+For a concert ticketing system with massive sudden spikes and millions of transactional
+requests, I would use a Storage Optimized instance. This category provides high disk
+throughput and IOPS, which helps the system handle fast reads and writes without 
+crashing during heavy traffic.
